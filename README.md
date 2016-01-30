@@ -6,3 +6,4 @@
 ###### Library
 * use
   * [PagingMenuController](https://github.com/kitasuke/PagingMenuController)
+    *  [iOSのUIライブラリ「PagingMenuController」の使い方](http://qiita.com/ryotakodaira/items/a63f36588f236da740a6)
