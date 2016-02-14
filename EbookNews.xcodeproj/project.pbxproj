@@ -11,6 +11,7 @@
 		1717C5D21C5CA80000C6AD3A /* PagingMenu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717C5D11C5CA80000C6AD3A /* PagingMenu1ViewController.swift */; };
 		1717C5D41C5CA81400C6AD3A /* PagingMenu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717C5D31C5CA81400C6AD3A /* PagingMenu2ViewController.swift */; };
 		1717C5D61C5CA82B00C6AD3A /* PagingMenu3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717C5D51C5CA82B00C6AD3A /* PagingMenu3ViewController.swift */; };
+		1755270F1C707BDB008F2317 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1755270E1C707BDB008F2317 /* Alamofire.framework */; };
 		17B38C0A1C54B2590096CDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B38C091C54B2590096CDDA /* AppDelegate.swift */; };
 		17B38C0C1C54B2590096CDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B38C0B1C54B2590096CDDA /* ViewController.swift */; };
 		17B38C0F1C54B2590096CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B38C0D1C54B2590096CDDA /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		1717C5D11C5CA80000C6AD3A /* PagingMenu1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenu1ViewController.swift; sourceTree = "<group>"; };
 		1717C5D31C5CA81400C6AD3A /* PagingMenu2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenu2ViewController.swift; sourceTree = "<group>"; };
 		1717C5D51C5CA82B00C6AD3A /* PagingMenu3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenu3ViewController.swift; sourceTree = "<group>"; };
+		1755270E1C707BDB008F2317 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		17B38C061C54B2590096CDDA /* EbookNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EbookNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B38C091C54B2590096CDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B38C0B1C54B2590096CDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1755270F1C707BDB008F2317 /* Alamofire.framework in Frameworks */,
 				1717C5CF1C5CA6BB00C6AD3A /* PagingMenuController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +89,7 @@
 		17B38BFD1C54B2590096CDDA = {
 			isa = PBXGroup;
 			children = (
+				1755270E1C707BDB008F2317 /* Alamofire.framework */,
 				1717C5CE1C5CA6BB00C6AD3A /* PagingMenuController.framework */,
 				17B38C081C54B2590096CDDA /* EbookNews */,
 				17B38C1D1C54B2590096CDDA /* EbookNewsTests */,
@@ -276,6 +280,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/PagingMenuController.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 			);
