@@ -12,6 +12,7 @@
 		1717C5D41C5CA81400C6AD3A /* PagingMenu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717C5D31C5CA81400C6AD3A /* PagingMenu2ViewController.swift */; };
 		1717C5D61C5CA82B00C6AD3A /* PagingMenu3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1717C5D51C5CA82B00C6AD3A /* PagingMenu3ViewController.swift */; };
 		1755270F1C707BDB008F2317 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1755270E1C707BDB008F2317 /* Alamofire.framework */; };
+		176672A81C8172F400C16976 /* RakutenBookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176672A71C8172F400C16976 /* RakutenBookAPI.swift */; };
 		17B38C0A1C54B2590096CDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B38C091C54B2590096CDDA /* AppDelegate.swift */; };
 		17B38C0C1C54B2590096CDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B38C0B1C54B2590096CDDA /* ViewController.swift */; };
 		17B38C0F1C54B2590096CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B38C0D1C54B2590096CDDA /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		1717C5D31C5CA81400C6AD3A /* PagingMenu2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenu2ViewController.swift; sourceTree = "<group>"; };
 		1717C5D51C5CA82B00C6AD3A /* PagingMenu3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingMenu3ViewController.swift; sourceTree = "<group>"; };
 		1755270E1C707BDB008F2317 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		176672A71C8172F400C16976 /* RakutenBookAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RakutenBookAPI.swift; sourceTree = "<group>"; };
 		17B38C061C54B2590096CDDA /* EbookNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EbookNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B38C091C54B2590096CDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B38C0B1C54B2590096CDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,15 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		176672A41C8170E700C16976 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				176672A71C8172F400C16976 /* RakutenBookAPI.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		176672A51C8170ED00C16976 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		176672A61C81711000C16976 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1717C5D11C5CA80000C6AD3A /* PagingMenu1ViewController.swift */,
+				1717C5D31C5CA81400C6AD3A /* PagingMenu2ViewController.swift */,
+				1717C5D51C5CA82B00C6AD3A /* PagingMenu3ViewController.swift */,
+				17B38C0B1C54B2590096CDDA /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		17B38BFD1C54B2590096CDDA = {
 			isa = PBXGroup;
 			children = (
-				1755270E1C707BDB008F2317 /* Alamofire.framework */,
-				1717C5CE1C5CA6BB00C6AD3A /* PagingMenuController.framework */,
 				17B38C081C54B2590096CDDA /* EbookNews */,
 				17B38C1D1C54B2590096CDDA /* EbookNewsTests */,
 				17B38C281C54B2590096CDDA /* EbookNewsUITests */,
 				17B38C071C54B2590096CDDA /* Products */,
+				1755270E1C707BDB008F2317 /* Alamofire.framework */,
+				1717C5CE1C5CA6BB00C6AD3A /* PagingMenuController.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,15 +139,14 @@
 		17B38C081C54B2590096CDDA /* EbookNews */ = {
 			isa = PBXGroup;
 			children = (
+				176672A41C8170E700C16976 /* Data */,
+				176672A51C8170ED00C16976 /* Domain */,
+				176672A61C81711000C16976 /* Presentation */,
 				17B38C091C54B2590096CDDA /* AppDelegate.swift */,
-				17B38C0B1C54B2590096CDDA /* ViewController.swift */,
-				1717C5D11C5CA80000C6AD3A /* PagingMenu1ViewController.swift */,
-				1717C5D31C5CA81400C6AD3A /* PagingMenu2ViewController.swift */,
-				1717C5D51C5CA82B00C6AD3A /* PagingMenu3ViewController.swift */,
-				17B38C0D1C54B2590096CDDA /* Main.storyboard */,
 				17B38C101C54B2590096CDDA /* Assets.xcassets */,
-				17B38C121C54B2590096CDDA /* LaunchScreen.storyboard */,
 				17B38C151C54B2590096CDDA /* Info.plist */,
+				17B38C121C54B2590096CDDA /* LaunchScreen.storyboard */,
+				17B38C0D1C54B2590096CDDA /* Main.storyboard */,
 			);
 			path = EbookNews;
 			sourceTree = "<group>";
@@ -299,6 +326,7 @@
 				1717C5D21C5CA80000C6AD3A /* PagingMenu1ViewController.swift in Sources */,
 				1717C5D41C5CA81400C6AD3A /* PagingMenu2ViewController.swift in Sources */,
 				1717C5D61C5CA82B00C6AD3A /* PagingMenu3ViewController.swift in Sources */,
+				176672A81C8172F400C16976 /* RakutenBookAPI.swift in Sources */,
 				17B38C0A1C54B2590096CDDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +369,7 @@
 				17B38C0E1C54B2590096CDDA /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		17B38C121C54B2590096CDDA /* LaunchScreen.storyboard */ = {
@@ -349,6 +378,7 @@
 				17B38C131C54B2590096CDDA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
